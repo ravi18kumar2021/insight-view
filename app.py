@@ -59,11 +59,11 @@ if file is not None:
             else:
                 pass
         else:
-            st.text("No Duplicate Values Found")
+            st.success("No Duplicate Values Found")
 
     # display the summary of the dataframe
     if st.checkbox("Show DataFrame Summary"):
-        st.text("Summary of the DataFrame")
+        st.write("**Summary of the DataFrame**")
         if st.checkbox("Show all columns"):
             st.write(df.describe(include='all'))
         else:
